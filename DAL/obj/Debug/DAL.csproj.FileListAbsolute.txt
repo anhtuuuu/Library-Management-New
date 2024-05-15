@@ -1,0 +1,11 @@
+D:\Project_CSharp\Library_Management\DAL\bin\Debug\LibraryDB.mdf
+D:\Project_CSharp\Library_Management\DAL\bin\Debug\LibraryDB_log.ldf
+D:\Project_CSharp\Library_Management\DAL\bin\Debug\DAL.dll
+D:\Project_CSharp\Library_Management\DAL\bin\Debug\DAL.pdb
+D:\Project_CSharp\Library_Management\DAL\bin\Debug\DTO.dll
+D:\Project_CSharp\Library_Management\DAL\bin\Debug\DTO.pdb
+D:\Project_CSharp\Library_Management\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+D:\Project_CSharp\Library_Management\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+D:\Project_CSharp\Library_Management\DAL\obj\Debug\DAL.csproj.CopyComplete
+D:\Project_CSharp\Library_Management\DAL\obj\Debug\DAL.dll
+D:\Project_CSharp\Library_Management\DAL\obj\Debug\DAL.pdb

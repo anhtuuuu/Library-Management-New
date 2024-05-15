@@ -1,0 +1,388 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{AB009A04-DFFB-4896-A7E1-B301766FD994}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>GUI</RootNamespace>
+    <AssemblyName>GUI</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="itextsharp">
+      <HintPath>..\..\Tao_File_PDF\bin\Debug\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form_ChiTietHoaDon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_ChiTietHoaDon.Designer.cs">
+      <DependentUpon>Form_ChiTietHoaDon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_DangKy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_DangKy.Designer.cs">
+      <DependentUpon>Form_DangKy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_DangNhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_DangNhap.Designer.cs">
+      <DependentUpon>Form_DangNhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_GiaoDienQuanLyThuVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_GiaoDienQuanLyThuVien.Designer.cs">
+      <DependentUpon>Form_GiaoDienQuanLyThuVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_LoaiSach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_LoaiSach.Designer.cs">
+      <DependentUpon>Form_LoaiSach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_MuonTraSach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_MuonTraSach.Designer.cs">
+      <DependentUpon>Form_MuonTraSach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_NhaCungCap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_NhaCungCap.Designer.cs">
+      <DependentUpon>Form_NhaCungCap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_QuanLyDocGia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_QuanLyDocGia.Designer.cs">
+      <DependentUpon>Form_QuanLyDocGia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_QuanLyHoaDon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_QuanLyHoaDon.Designer.cs">
+      <DependentUpon>Form_QuanLyHoaDon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_QuanLySach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_QuanLySach.Designer.cs">
+      <DependentUpon>Form_QuanLySach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_QuanLyTaiKhoan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_QuanLyTaiKhoan.Designer.cs">
+      <DependentUpon>Form_QuanLyTaiKhoan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_QuenMatKhau.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_QuenMatKhau.Designer.cs">
+      <DependentUpon>Form_QuenMatKhau.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_ThongKe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_ThongKe.Designer.cs">
+      <DependentUpon>Form_ThongKe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QL_ThuVienDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QL_ThuVienDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QL_ThuVienDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QL_ThuVienDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QL_ThuVienDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QL_ThuVienDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QL_ThuVienDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QL_ThuVienDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QL_ThuVienDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QL_ThuVienDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QL_ThuVienDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QL_ThuVienDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QL_ThuVienDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QL_ThuVienDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QL_ThuVienDataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QL_ThuVienDataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="_D__PROJECT_CSHARP_LIBRARY_MANAGEMENT_DAL_LIBRARYDB_MDFDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_D__PROJECT_CSHARP_LIBRARY_MANAGEMENT_DAL_LIBRARYDB_MDFDataSet.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Form_ChiTietHoaDon.resx">
+      <DependentUpon>Form_ChiTietHoaDon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_DangKy.resx">
+      <DependentUpon>Form_DangKy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_DangNhap.resx">
+      <DependentUpon>Form_DangNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_GiaoDienQuanLyThuVien.resx">
+      <DependentUpon>Form_GiaoDienQuanLyThuVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_LoaiSach.resx">
+      <DependentUpon>Form_LoaiSach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_MuonTraSach.resx">
+      <DependentUpon>Form_MuonTraSach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_NhaCungCap.resx">
+      <DependentUpon>Form_NhaCungCap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_QuanLyDocGia.resx">
+      <DependentUpon>Form_QuanLyDocGia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_QuanLyHoaDon.resx">
+      <DependentUpon>Form_QuanLyHoaDon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_QuanLySach.resx">
+      <DependentUpon>Form_QuanLySach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_QuanLyTaiKhoan.resx">
+      <DependentUpon>Form_QuanLyTaiKhoan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_QuenMatKhau.resx">
+      <DependentUpon>Form_QuenMatKhau.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_ThongKe.resx">
+      <DependentUpon>Form_ThongKe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="QL_ThuVienDataSet.xsc">
+      <DependentUpon>QL_ThuVienDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="QL_ThuVienDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QL_ThuVienDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QL_ThuVienDataSet.xss">
+      <DependentUpon>QL_ThuVienDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="QL_ThuVienDataSet1.xsc">
+      <DependentUpon>QL_ThuVienDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="QL_ThuVienDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QL_ThuVienDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QL_ThuVienDataSet1.xss">
+      <DependentUpon>QL_ThuVienDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="QL_ThuVienDataSet2.xsc">
+      <DependentUpon>QL_ThuVienDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="QL_ThuVienDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QL_ThuVienDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QL_ThuVienDataSet2.xss">
+      <DependentUpon>QL_ThuVienDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="QL_ThuVienDataSet3.xsc">
+      <DependentUpon>QL_ThuVienDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="QL_ThuVienDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QL_ThuVienDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QL_ThuVienDataSet3.xss">
+      <DependentUpon>QL_ThuVienDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="QL_ThuVienDataSet4.xsc">
+      <DependentUpon>QL_ThuVienDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="QL_ThuVienDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QL_ThuVienDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QL_ThuVienDataSet4.xss">
+      <DependentUpon>QL_ThuVienDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="QL_ThuVienDataSet5.xsc">
+      <DependentUpon>QL_ThuVienDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="QL_ThuVienDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QL_ThuVienDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QL_ThuVienDataSet5.xss">
+      <DependentUpon>QL_ThuVienDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="QL_ThuVienDataSet6.xsc">
+      <DependentUpon>QL_ThuVienDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="QL_ThuVienDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QL_ThuVienDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QL_ThuVienDataSet6.xss">
+      <DependentUpon>QL_ThuVienDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="QL_ThuVienDataSet7.xsc">
+      <DependentUpon>QL_ThuVienDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="QL_ThuVienDataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QL_ThuVienDataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QL_ThuVienDataSet7.xss">
+      <DependentUpon>QL_ThuVienDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="_D__PROJECT_CSHARP_LIBRARY_MANAGEMENT_DAL_LIBRARYDB_MDFDataSet.xsc">
+      <DependentUpon>_D__PROJECT_CSHARP_LIBRARY_MANAGEMENT_DAL_LIBRARYDB_MDFDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="_D__PROJECT_CSHARP_LIBRARY_MANAGEMENT_DAL_LIBRARYDB_MDFDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>_D__PROJECT_CSHARP_LIBRARY_MANAGEMENT_DAL_LIBRARYDB_MDFDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="_D__PROJECT_CSHARP_LIBRARY_MANAGEMENT_DAL_LIBRARYDB_MDFDataSet.xss">
+      <DependentUpon>_D__PROJECT_CSHARP_LIBRARY_MANAGEMENT_DAL_LIBRARYDB_MDFDataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BLL\BLL.csproj">
+      <Project>{de455397-71fc-4ef1-ac8a-2c5211222312}</Project>
+      <Name>BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DTO\DTO.csproj">
+      <Project>{ad9e210f-d83d-47f3-a18d-6bbc0d39b9b4}</Project>
+      <Name>DTO</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\173-1731325_person-icon-png-transparent-png.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Browny-Red-Border.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bgc.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pixil-frame-0 %287%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\34-asana-color-gradient.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OIP %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\R %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\doanhthu.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\R.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cach-ve-quyen-sach-13.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot 2024-05-09 142141.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
